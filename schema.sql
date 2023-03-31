@@ -19,3 +19,9 @@ CREATE TABLE IF NOT EXISTS owners (
    full_name VARCHAR ( 100 ) UNIQUE NOT NULL,
    age INT
 );
+
+/* Create table species */
+CREATE TABLE IF NOT EXISTS species (
+   id serial PRIMARY KEY,
+   name VARCHAR ( 100 ) UNIQUE NOT NULL
+);
