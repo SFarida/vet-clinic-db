@@ -61,13 +61,13 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Vet clinic database <a name="about-project"></a>
 
-**[Vet Clinic database]** is a relational database based on a real-life example which contains information about some animals.
+**Vet Clinic database** is a relational database based on a real-life example which contains information about some animals.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+<!-- > Describe the tech stack and include only the relevant sections that apply to your project. -->
 
 <!-- <details>
   <summary>Client</summary>
@@ -245,7 +245,7 @@ If you like this project please give it a star 😁🌟✨
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+<!-- > Give credit to everyone who inspired your codebase. -->
 
 I would like to thank Microverse for providing the necessary resources for the realisation of this project
 
@@ -259,11 +259,11 @@ I would like to thank Microverse for providing the necessary resources for the r
 
 - **How do I create a database**
 
-  - [After connecting to postgres you run the command `createdb vet_clinic;`]
+  - After connecting to postgres you run the command `createdb vet_clinic;`
 
 - **How do I connect to the database**
 
-  - [\c vet_clinic]
+  - run `\c vet_clinic`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
