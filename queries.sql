@@ -19,3 +19,8 @@ BEGIN TRANSACTION;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE species = '';
 COMMIT TRANSACTION;
+
+/* Deleting all records and rolling back */
+BEGIN TRANSACTION;
+DELETE FROM animals;
+ROLLBACK TRANSACTION;
