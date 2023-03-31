@@ -45,7 +45,7 @@ After you're finished please remove all the comments and instructions!
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
+  <!-- - [Install](#install) -->
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Vet clinic database <a name="about-project"></a>
 
 **[Vet Clinic database]** is a relational database based on a real-life example which contains information about some animals.
 
@@ -96,9 +96,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[Create animals table]**
-- **[Populate the table]**
-- **[Perform some queries to retrieve specific data or alter the database]**
+- **Create animals table**
+- **Populate the table**
+- **Perform some queries to retrieve specific data or alter the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,9 +215,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Queries to update animals table]**
-- [ ] **[Query multiple tables]**
-- [ ] **[Add database schema diagram]**
+- [ ] **Queries to update animals table**
+- [ ] **Query multiple tables**
+- [ ] **Add database schema diagram**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,11 +257,11 @@ I would like to thank Microverse for providing the necessary resources for the r
 
 <!-- > Add at least 2 questions new developers would ask when they decide to use your project. -->
 
-- **[How do I create a database]**
+- **How do I create a database**
 
   - [After connecting to postgres you run the command `createdb vet_clinic;`]
 
-- **[How do I connect to the database]**
+- **How do I connect to the database**
 
   - [\c vet_clinic]
 
