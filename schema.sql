@@ -9,4 +9,5 @@ CREATE TABLE IF NOT EXISTS animals (
    weight_kg float(3)
 );
 
+/* Add species column */
 ALTER TABLE animals ADD species VARCHAR ( 100 );

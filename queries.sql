@@ -9,10 +9,13 @@ SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name <> 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
-/*Inside a transaction update the animals table by setting the species column to unspecified. 
-Verify that change was made. Then roll back the change and verify that the species columns went 
-back to the state before the transaction.*/
-
+/* Setting species column and rolling back */
 BEGIN TRANSACTION;
 UPDATE animals SET species = 'unspecified';
 ROLLBACK TRANSACTION;
+
+/* Setting species colum and persisting the change */
+BEGIN TRANSACTION;
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species = '';
+COMMIT TRANSACTION;
