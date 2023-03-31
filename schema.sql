@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS animals (
    neutered bool,
    weight_kg float(3)
 );
+
+ALTER TABLE animals ADD species VARCHAR ( 100 );
