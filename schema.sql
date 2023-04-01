@@ -60,3 +60,19 @@ CREATE TABLE IF NOT EXISTS vets (
   age INT,
   date_of_graduation DATE
 );
+
+/* Create join table specializations */
+CREATE TABLE IF NOT EXISTS specializations (
+  vet_id INT,
+  species_id INT,
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (species_id) REFERENCES species (id)
+);
+
+/* Create join table visits */
+CREATE TABLE IF NOT EXISTS visits (
+  animal_id INT,
+  vet_id INT,
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (animal_id) REFERENCES animals (id)
+);
