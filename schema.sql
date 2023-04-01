@@ -73,6 +73,7 @@ CREATE TABLE IF NOT EXISTS specializations (
 CREATE TABLE IF NOT EXISTS visits (
   animal_id INT,
   vet_id INT,
+  date_of_visit DATE,
   FOREIGN KEY (vet_id) REFERENCES vets (id),
   FOREIGN KEY (animal_id) REFERENCES animals (id)
 );
