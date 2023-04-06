@@ -32,6 +32,9 @@ REQUIRED SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
+<div align="center">
+  <img src="./schema_diagram.png" alt="Awesome Meals image" width="100%" />
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
