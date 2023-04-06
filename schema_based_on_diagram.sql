@@ -20,3 +20,15 @@ CREATE TABLE medical_histories(
 	  REFERENCES patients(id)
 	  ON DELETE CASCADE
 );
+
+CREATE TABLE invoices(
+   id serial PRIMARY KEY,
+   medical_history_id INT,
+   total_amount REAL,
+   generated_at TIMESTAMP,
+   payed_at TIMESTAMP,
+   CONSTRAINT fk_medical_history
+      FOREIGN KEY(medical_history_id) 
+	  REFERENCES medical_histories(id)
+	  ON DELETE CASCADE
+);
