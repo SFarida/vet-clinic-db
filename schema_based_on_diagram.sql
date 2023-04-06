@@ -24,7 +24,7 @@ CREATE TABLE medical_histories(
 CREATE TABLE invoices(
    id serial PRIMARY KEY,
    medical_history_id INT,
-   total_amount REAL,
+   total_amount DECIMAL,
    generated_at TIMESTAMP,
    payed_at TIMESTAMP,
    CONSTRAINT fk_medical_history
@@ -37,9 +37,9 @@ CREATE TABLE invoice_items(
    id serial PRIMARY KEY,
    invoice_id INT,
    treatment_id INT,
-   unit_price REAL,
+   unit_price DECIMAL,
    quantity INT,
-   total_price REAL,
+   total_price DECIMAL,
    CONSTRAINT fk_invoice_item
       FOREIGN KEY(invoice_id) 
 	  REFERENCES invoices(id)
