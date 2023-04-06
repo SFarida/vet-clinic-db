@@ -32,3 +32,20 @@ CREATE TABLE invoices(
 	  REFERENCES medical_histories(id)
 	  ON DELETE CASCADE
 );
+
+CREATE TABLE invoice_items(
+   id serial PRIMARY KEY,
+   invoice_id INT,
+   treatment_id INT,
+   unit_price REAL,
+   quantity INT,
+   total_price REAL,
+   CONSTRAINT fk_invoice_item
+      FOREIGN KEY(invoice_id) 
+	  REFERENCES invoices(id)
+	  ON DELETE CASCADE,
+    CONSTRAINT fk_treatment
+      FOREIGN KEY(treatment_id) 
+	  REFERENCES treatments(id)
+	  ON DELETE CASCADE
+);
