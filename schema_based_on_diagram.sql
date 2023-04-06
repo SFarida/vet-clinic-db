@@ -9,3 +9,14 @@ CREATE TABLE treatments(
    type VARCHAR(100),
    name VARCHAR(250)
 );
+
+CREATE TABLE medical_histories(
+   id serial PRIMARY KEY,
+   patient_id INT,
+   admitted_at TIMESTAMP,
+   status VARCHAR(100),
+   CONSTRAINT fk_patient
+      FOREIGN KEY(patient_id) 
+	  REFERENCES patients(id)
+	  ON DELETE CASCADE
+);
